@@ -16,7 +16,7 @@ COMMON_DECODERS = \
 	mp3 ac3 aac \
 	ass ssa srt webvtt
 
-WEBM_MUXERS = webm ogg null image2
+WEBM_MUXERS = webm ogg null image2 segment
 WEBM_ENCODERS = libvpx_vp8 libopus mjpeg
 FFMPEG_WEBM_BC = build/ffmpeg-webm/ffmpeg.bc
 LIBASS_PC_PATH = ../freetype/dist/lib/pkgconfig:../fribidi/dist/lib/pkgconfig
@@ -34,7 +34,7 @@ WEBM_SHARED_DEPS = \
 	build/opus/dist/lib/libopus.so \
 	build/libvpx/dist/lib/libvpx.so
 
-MP4_MUXERS = mp4 mp3 null
+MP4_MUXERS = mp4 mp3 null segment
 MP4_ENCODERS = libx264 libmp3lame aac
 FFMPEG_MP4_BC = build/ffmpeg-mp4/ffmpeg.bc
 FFMPEG_MP4_PC_PATH = ../x264/dist/lib/pkgconfig
